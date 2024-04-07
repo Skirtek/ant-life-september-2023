@@ -25,4 +25,14 @@ public class BeeColony implements Colony<Bee> {
     public void generateNewColony(Map<Class<? extends Bee>, Integer> colonyConfiguration) {
 
     }
+
+    @Override
+    public void update() {
+
+    }
+
+    @Override
+    public String getColonyStructureInfo() {
+        return null;
+    }
 }
