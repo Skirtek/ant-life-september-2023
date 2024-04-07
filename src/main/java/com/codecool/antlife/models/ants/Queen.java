@@ -5,12 +5,18 @@ import javafx.scene.image.Image;
 import lombok.NonNull;
 
 public class Queen extends Ant {
+    private static Image image;
+
     public Queen(@NonNull Position position) {
         super(position);
     }
 
     @Override
-    public Image getImage() {
-        return null;
+    public Image getImage(double size) {
+        if (image == null) {
+            image = new Image(Queen.class.getResourceAsStream("/images/queen.png"), size, size, true, false);
+        }
+
+        return image;
     }
 }

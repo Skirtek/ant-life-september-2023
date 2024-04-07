@@ -8,5 +8,5 @@ public interface Animal {
 
     void setPosition(Position position);
 
-    Image getImage();
+    Image getImage(double size);
 }
