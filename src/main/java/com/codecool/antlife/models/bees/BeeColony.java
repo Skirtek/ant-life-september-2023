@@ -3,6 +3,7 @@ package com.codecool.antlife.models.bees;
 import com.codecool.antlife.models.Colony;
 
 import java.util.List;
+import java.util.Map;
 
 public class BeeColony implements Colony<Bee> {
     @Override
@@ -17,6 +18,11 @@ public class BeeColony implements Colony<Bee> {
 
     @Override
     public void removeMember(Bee memberToRemove) {
+
+    }
+
+    @Override
+    public void generateNewColony(Map<Class<? extends Bee>, Integer> colonyConfiguration) {
 
     }
 }
